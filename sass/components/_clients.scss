@@ -1,0 +1,32 @@
+.clients{
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.link-clients{
+    border-radius: 4px;
+    border: 1px gray solid ;
+    border-color: #AFB1B8;
+    height: 92px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color var(--one-time) var(--two-time) ;
+    &:hover {
+        border-color: var(--button-color);
+    }
+}
+
+.svg-fill{
+    fill: #AFB1B8;
+    transition: fill var(--one-time) var(--two-time) ;
+    &:hover{
+        fill: #2196F3;
+    }
+    .link-clients:hover & {
+        fill: var(--button-color);
+    } 
+}

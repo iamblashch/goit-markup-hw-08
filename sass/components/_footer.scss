@@ -1,0 +1,156 @@
+.main-footer{
+    display: flex;
+    align-items: baseline;
+}
+    
+.footer{
+    background-color: var(--primary-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: left;
+}
+
+.logo-footer{
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color:var(--button-color);
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-studio{
+    color: var(--whrite);
+}
+
+.adress{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--whrite);
+    text-decoration: none;
+    font-style: normal;
+    transition: color var(--one-time) var(--two-time) ;
+    &:hover,
+    &:focus{
+        color: var(--button-color);
+    }
+}
+.info{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-style: normal;
+    transition: color var(--one-time) var(--two-time) ;
+    &:hover,
+    &:focus{
+        color: var(--button-color);
+    }
+}
+
+.footer-block-one{
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+}
+
+.footer-soc-list{
+    display: flex;
+    padding-inline-start: 0px;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-soc-item{
+    width: 44px;
+    height: 44px;
+}
+
+.footer-soc-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--whrite);
+}
+.footer-soc-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-soc-link{
+    background-color: rgba(255, 255, 255, 0.1);;
+    border-radius: 50px;
+    transition:  background-color var(--one-time) var(--two-time) ;
+    &:hover,
+    &:focus{
+        background-color: #2196F3;
+    }
+}
+
+.footer-block-tree{
+    margin-left: 93px;
+}
+
+.block-tree-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:var(--whrite);
+    padding-bottom: 20px;
+    
+}
+
+.footer-sub-input{
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+    color: var(--whrite);
+}
+
+
+.subscribe-btn{
+    border: 0;
+    color: var(--whrite);
+    background-color: var(--button-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding: 10px 28px;
+    gap: 10px;
+    margin-left: 12px;
+}
+
+.footer-form{
+    display: flex;
+}
