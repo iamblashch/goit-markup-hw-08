@@ -1,26 +1,45 @@
-.sbros{
-    padding-bottom: 0;
-}
+// .sbros{
+//     padding-bottom: 0;
+// }
 .futures {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
+.futures-item{
+    width: 100%;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+       width: 270px;
+    }
+    }    
+
 .futures-item__title {
+    text-align: center;
     color: #212121;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
+    @media screen and (min-width: 1200px) {
+        text-align: left;    
+    }  
 }
 
 .futures-item__text {
     color: var(--primary-text-color);
     font-size: 14px;
     line-height: 1.71;
-    width: 270px;
+    width: 100%;
     margin: 0px;
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        
+    }
 }
 
 .futures-item::before {
@@ -38,22 +57,40 @@
 .futures-item:nth-child(1)::before {
     background-image: url(../images/antenna.svg);
     background-color: #F5F4FA;
-    width: 270px;
+    // width: 270px;
+    width: 100%;
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
+    
+
 }
 .futures-item:nth-child(2)::before {
     background-image: url(../images/clock.svg);
     background-color: #F5F4FA;
-    width: 270px;
+    // width: 270px;
+    width: 100%;
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 .futures-item:nth-child(3)::before {
     background-image: url(../images/diagram.svg);
     background-color: #F5F4FA;
-    width: 270px;
+    // width: 270px;
+    width: 100%;
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
 .futures-item:nth-child(4)::before {
     background-image: url(../images/astronaut.svg);
     background-color: #F5F4FA;
-    width: 270px;
+    // width: 270px;
+    width: 100%;
+    @media screen and (min-width: 1200px) {
+        width: 270px;;
+    }
 }
 
 .ninja{

@@ -2,29 +2,32 @@
     display: flex;
     gap: 30px;
     justify-content: center;
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
 }
 
-.work-title{
+.title-work{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
+    margin-bottom: 50px;
 }
 
 .work__img{
     display: block;
     position: relative;
 }
-.team-title{
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: var(--title-color);
-}
+
 .work__info {
     position: absolute;
     bottom: 0;
