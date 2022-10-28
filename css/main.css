@@ -70,7 +70,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -197,6 +197,11 @@ img {
     margin-bottom: 10px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .info__icon {
+    margin-bottom: 0px;
+  }
+}
 
 .svg {
   fill: currentColor;
@@ -216,6 +221,8 @@ img {
 }
 
 .mob-menu-btn-close {
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   border: none;
   display: block;
@@ -295,6 +302,10 @@ img {
   color: #2196F3;
 }
 
+.list-menu-link.list-menu-link.active {
+  color: #2196F3;
+}
+
 .list-info:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -337,9 +348,9 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-hero.jpg);
     padding-top: 118px;
     padding-bottom: 118px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-hero.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
@@ -349,10 +360,10 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -868,6 +879,7 @@ img {
     width: 206px;
     margin-left: 70px;
     text-align: left;
+    margin-bottom: 0;
   }
 }
 
@@ -907,6 +919,11 @@ img {
   color: #FFFFFF;
   margin-bottom: 20px;
   margin-left: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc-title {
+    margin-left: 0px;
+  }
 }
 
 .footer-soc-link {
@@ -1171,11 +1188,11 @@ img {
 }
 
 .modal {
+  width: 320px;
+  height: 576px;
   position: relative;
   top: 50%;
   left: 50%;
-  width: 450px;
-  height: 609px;
   transform: translate(-50%, -50%) scale(1);
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1183,6 +1200,12 @@ img {
   border-radius: 4px;
   padding: 40px;
   transition: transform 700ms;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1236,8 +1259,8 @@ img {
 }
 
 .modal-input {
-  width: 370px;
-  height: 40px;
+  width: 240px;
+  height: 32px;
   padding: 11px 42px;
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1247,6 +1270,12 @@ img {
 }
 .modal-input:focus, .modal-input:hover {
   border-color: var(--button-color);
+}
+@media screen and (min-width: 480px) {
+  .modal-input {
+    width: 370px;
+    height: 40px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal-input {
@@ -1273,7 +1302,7 @@ img {
 }
 
 .modal-comment {
-  width: 370px;
+  width: 240px;
   height: 120px;
   padding: 12px 16px;
   resize: none;
@@ -1289,6 +1318,11 @@ img {
 }
 .modal-comment:focus, .modal-comment:hover {
   border-color: var(--button-color);
+}
+@media screen and (min-width: 480px) {
+  .modal-comment {
+    width: 370px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal-comment {

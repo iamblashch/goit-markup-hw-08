@@ -106,6 +106,9 @@
     @media screen and (min-width: 768px) {
         margin-bottom: 10px;
     }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+    }
 
 }
 
@@ -124,6 +127,8 @@
     }
 }
 .mob-menu-btn-close{
+    width: 40px;
+    height: 40px;
     background-color: transparent;
     border: none;
     display: block;
@@ -204,9 +209,15 @@
         color: #2196F3;
     }
 }
+
+.list-menu-link.list-menu-link.active{
+    color:#2196F3;
+}
+
 .list-info:not(:last-child){
     margin-bottom: 32px;
 }
+
 .mob-soc{
     font-weight: 500;
     font-size: 18px;
