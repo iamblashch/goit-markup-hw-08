@@ -44,7 +44,7 @@
     color:var(--title-color);
     text-decoration: none;
     cursor: pointer;
-    transition: color var(--one-time) var(--two-time) ;
+    transition: color var(--one-time) var(--two-time);
     &:hover,
     &focus{
         color: var(--button-color);
